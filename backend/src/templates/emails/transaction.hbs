@@ -1,0 +1,59 @@
+{{#> layout}}
+    <h2>Transaction Notification</h2>
+    
+    <p>Dear {{name}},</p>
+    
+    <p>A {{type}} transaction has been {{status}} on your account.</p>
+
+    <div class="alert alert-info">
+        <table class="table">
+            <tr>
+                <th>Transaction Type:</th>
+                <td>{{type}}</td>
+            </tr>
+            <tr>
+                <th>Amount:</th>
+                <td>{{formatCurrency amount}}</td>
+            </tr>
+            <tr>
+                <th>Date:</th>
+                <td>{{formatDate date}}</td>
+            </tr>
+            <tr>
+                <th>Reference:</th>
+                <td>{{reference}}</td>
+            </tr>
+            <tr>
+                <th>Status:</th>
+                <td>{{status}}</td>
+            </tr>
+        </table>
+    </div>
+
+    {{#if isDebit}}
+    <div class="alert alert-warning">
+        <p>This amount has been debited from your account.</p>
+    </div>
+    {{else}}
+    <div class="alert alert-info">
+        <p>This amount has been credited to your account.</p>
+    </div>
+    {{/if}}
+
+    <p>To view transaction details or download your receipt, please log in to your account:</p>
+    
+    <a href="{{loginUrl}}" class="button">View Transaction Details</a>
+
+    <div class="alert alert-warning">
+        <p><strong>Security Notice:</strong> If you didn't authorize this transaction, please contact us immediately or log in to your account to report suspicious activity.</p>
+    </div>
+
+    <p>For your security:</p>
+    <ul>
+        <li>Review your transaction history regularly</li>
+        <li>Update your security settings if needed</li>
+        <li>Never share your account details with anyone</li>
+    </ul>
+
+    <p>Best regards,<br>The Mobile Banking Team</p>
+{{/layout}}
