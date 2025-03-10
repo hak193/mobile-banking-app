@@ -1,0 +1,130 @@
+{
+  "common": {
+    "greeting": "Dear {{name}}",
+    "signature": "Best regards,\nThe Mobile Banking Team",
+    "footer": {
+      "contact": "If you have any questions, please contact our support team",
+      "phone": "Phone: {{supportPhone}}",
+      "email": "Email: {{supportEmail}}",
+      "hours": "Available 24/7",
+      "disclaimer": "This is an automated message, please do not reply to this email",
+      "confidential": "This email contains confidential information"
+    }
+  },
+  "welcome": {
+    "subject": "Welcome to Mobile Banking",
+    "title": "Welcome to Mobile Banking!",
+    "message": "Thank you for choosing Mobile Banking. Your account has been successfully created.",
+    "getStarted": "Getting Started:",
+    "steps": {
+      "app": "Download our mobile app",
+      "security": "Set up your security preferences",
+      "billers": "Add your favorite billers",
+      "explore": "Explore our banking features"
+    },
+    "security": {
+      "title": "For your security, we recommend:",
+      "password": "Use a strong, unique password",
+      "twoFactor": "Enable two-factor authentication",
+      "credentials": "Never share your login credentials",
+      "logout": "Always log out when finished"
+    },
+    "support": "If you have any questions or need assistance, our support team is available 24/7",
+    "warning": "Important: If you didn't create this account, please contact us immediately"
+  },
+  "verification": {
+    "subject": "Verify Your Email Address",
+    "title": "Email Verification",
+    "message": "Please verify your email address by clicking the button below:",
+    "button": "Verify Email",
+    "expiry": "This verification link will expire in {{time}}",
+    "ignore": "If you didn't create an account, you can safely ignore this email"
+  },
+  "passwordReset": {
+    "subject": "Reset Your Password",
+    "title": "Password Reset Request",
+    "message": "We received a request to reset your password. Click the button below to proceed:",
+    "button": "Reset Password",
+    "expiry": "This password reset link will expire in {{time}}",
+    "security": {
+      "title": "For security reasons:",
+      "oneTime": "The link can only be used once",
+      "different": "Your new password must be different from your previous password",
+      "strong": "Choose a strong password that includes uppercase letters, numbers, and special characters",
+      "share": "Never share your password with anyone"
+    },
+    "warning": "If you didn't request this password reset, please contact us immediately"
+  },
+  "transaction": {
+    "subject": "Transaction Notification",
+    "title": "Transaction Alert",
+    "message": "A {{type}} transaction has been {{status}} on your account",
+    "details": {
+      "type": "Transaction Type",
+      "amount": "Amount",
+      "date": "Date",
+      "reference": "Reference",
+      "status": "Status"
+    },
+    "debit": "This amount has been debited from your account",
+    "credit": "This amount has been credited to your account",
+    "viewDetails": "To view transaction details or download your receipt, please log in to your account",
+    "security": "If you didn't authorize this transaction, please contact us immediately"
+  },
+  "billPayment": {
+    "subject": "Bill Payment Confirmation",
+    "title": "Bill Payment {{status}}",
+    "details": {
+      "biller": "Biller",
+      "amount": "Amount",
+      "date": "Date",
+      "reference": "Reference",
+      "status": "Status"
+    },
+    "scheduled": "This payment has been scheduled for {{date}}",
+    "processed": "The amount has been debited from your account",
+    "recurring": "This is a recurring payment. The next payment is scheduled for {{date}}",
+    "receipt": "To view payment details or download your receipt, please click below"
+  },
+  "securityAlert": {
+    "subject": "Security Alert",
+    "title": "Important Security Notice",
+    "details": {
+      "event": "Event Type",
+      "date": "Date & Time",
+      "location": "Location",
+      "device": "Device"
+    },
+    "action": {
+      "title": "Action Required",
+      "steps": {
+        "review": "Log in to your account and review recent activity",
+        "password": "Change your password immediately",
+        "twoFactor": "Enable two-factor authentication if not already enabled",
+        "settings": "Review and update your security settings"
+      }
+    },
+    "contact": "If you don't recognize this activity, please contact our security team immediately"
+  },
+  "statement": {
+    "subject": "Your Account Statement is Ready",
+    "title": "Monthly Statement Available",
+    "message": "Your account statement for the period {{startDate}} to {{endDate}} is now available",
+    "details": {
+      "account": "Account Number",
+      "period": "Statement Period",
+      "type": "Statement Type"
+    },
+    "download": "Download Statement",
+    "viewOnline": "View Online",
+    "paperless": {
+      "title": "Go Paperless!",
+      "benefits": {
+        "instant": "Instant access to your statements",
+        "storage": "Secure storage for up to 7 years",
+        "environment": "Reduce paper waste",
+        "security": "Enhanced security"
+      }
+    }
+  }
+}
