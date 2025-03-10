@@ -1,0 +1,158 @@
+{
+  "app": {
+    "name": "Mobile Banking",
+    "tagline": "Banking at your fingertips",
+    "welcome": "Welcome to Mobile Banking"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "changePassword": "Change Password",
+    "twoFactorAuth": "Two-Factor Authentication",
+    "verifyEmail": "Verify Email",
+    "resendCode": "Resend Code"
+  },
+  "account": {
+    "overview": "Account Overview",
+    "balance": "Balance",
+    "available": "Available Balance",
+    "pending": "Pending",
+    "accountNumber": "Account Number",
+    "routingNumber": "Routing Number",
+    "type": {
+      "savings": "Savings Account",
+      "checking": "Checking Account"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "frozen": "Frozen",
+      "closed": "Closed"
+    }
+  },
+  "transaction": {
+    "history": "Transaction History",
+    "details": "Transaction Details",
+    "type": {
+      "deposit": "Deposit",
+      "withdrawal": "Withdrawal",
+      "transfer": "Transfer",
+      "payment": "Payment",
+      "refund": "Refund",
+      "fee": "Fee"
+    },
+    "status": {
+      "pending": "Pending",
+      "completed": "Completed",
+      "failed": "Failed",
+      "cancelled": "Cancelled"
+    },
+    "amount": "Amount",
+    "date": "Date",
+    "description": "Description",
+    "reference": "Reference Number"
+  },
+  "transfer": {
+    "title": "Transfer Money",
+    "from": "From Account",
+    "to": "To Account",
+    "amount": "Amount",
+    "description": "Description",
+    "schedule": "Schedule Transfer",
+    "recurring": "Make Recurring",
+    "frequency": {
+      "once": "One Time",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    }
+  },
+  "bill": {
+    "payment": "Bill Payment",
+    "payee": "Payee",
+    "amount": "Amount",
+    "dueDate": "Due Date",
+    "schedule": "Schedule Payment",
+    "recurring": "Set up Recurring Payment",
+    "history": "Payment History",
+    "status": {
+      "scheduled": "Scheduled",
+      "processing": "Processing",
+      "paid": "Paid",
+      "failed": "Failed"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "personalInfo": "Personal Information",
+    "contactInfo": "Contact Information",
+    "preferences": "Preferences",
+    "security": "Security Settings",
+    "notifications": "Notification Settings"
+  },
+  "notification": {
+    "title": "Notifications",
+    "markRead": "Mark as Read",
+    "markAllRead": "Mark All as Read",
+    "type": {
+      "transaction": "Transaction Alert",
+      "security": "Security Alert",
+      "account": "Account Alert",
+      "system": "System Message"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "continue": "Continue",
+    "tryAgain": "Try Again",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "refresh": "Refresh",
+    "more": "More",
+    "less": "Less",
+    "all": "All",
+    "none": "None",
+    "or": "or",
+    "and": "and",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "date": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "thisWeek": "This Week",
+    "lastWeek": "Last Week",
+    "thisMonth": "This Month",
+    "lastMonth": "Last Month",
+    "thisYear": "This Year",
+    "lastYear": "Last Year",
+    "custom": "Custom Range"
+  },
+  "currency": {
+    "USD": "US Dollar",
+    "EUR": "Euro",
+    "GBP": "British Pound",
+    "JPY": "Japanese Yen",
+    "CAD": "Canadian Dollar",
+    "AUD": "Australian Dollar",
+    "CHF": "Swiss Franc",
+    "CNY": "Chinese Yuan"
+  }
+}
