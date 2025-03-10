@@ -1,0 +1,118 @@
+{
+  "auth": {
+    "invalidCredentials": "Correo electrónico o contraseña inválidos",
+    "accountLocked": "La cuenta ha sido bloqueada. Por favor contacte a soporte",
+    "accountDisabled": "La cuenta ha sido deshabilitada",
+    "sessionExpired": "La sesión ha expirado. Por favor inicie sesión nuevamente",
+    "unauthorized": "Acceso no autorizado",
+    "invalidToken": "Token inválido o expirado",
+    "invalidCode": "Código de verificación inválido",
+    "codeExpired": "El código de verificación ha expirado",
+    "emailNotVerified": "Correo electrónico no verificado",
+    "twoFactorRequired": "Se requiere autenticación de dos factores",
+    "passwordMismatch": "Las contraseñas no coinciden",
+    "oldPasswordIncorrect": "La contraseña actual es incorrecta",
+    "passwordReused": "La nueva contraseña no puede ser igual a las anteriores",
+    "tooManyAttempts": "Demasiados intentos fallidos. Por favor intente más tarde"
+  },
+  "validation": {
+    "required": "{{field}} es requerido",
+    "invalid": "{{field}} inválido",
+    "minLength": "{{field}} debe tener al menos {{min}} caracteres",
+    "maxLength": "{{field}} no puede exceder {{max}} caracteres",
+    "email": "Dirección de correo electrónico inválida",
+    "phone": "Número de teléfono inválido",
+    "password": {
+      "weak": "La contraseña es demasiado débil",
+      "requirements": "La contraseña debe contener mayúsculas, minúsculas, números y caracteres especiales"
+    },
+    "amount": {
+      "invalid": "Monto inválido",
+      "minimum": "El monto debe ser al menos {{min}}",
+      "maximum": "El monto no puede exceder {{max}}",
+      "insufficient": "Fondos insuficientes"
+    },
+    "date": {
+      "invalid": "Fecha inválida",
+      "future": "La fecha debe ser en el futuro",
+      "past": "La fecha debe ser en el pasado"
+    }
+  },
+  "transaction": {
+    "failed": "La transacción falló",
+    "cancelled": "La transacción fue cancelada",
+    "pending": "La transacción aún está pendiente",
+    "duplicate": "Se detectó una transacción duplicada",
+    "limitExceeded": "Límite de transacción excedido",
+    "accountFrozen": "La cuenta está congelada",
+    "invalidAccount": "Cuenta inválida",
+    "invalidRecipient": "Destinatario inválido",
+    "invalidAmount": "Monto inválido",
+    "insufficientFunds": "Fondos insuficientes",
+    "transferFailed": "La transferencia falló",
+    "paymentFailed": "El pago falló"
+  },
+  "account": {
+    "notFound": "Cuenta no encontrada",
+    "alreadyExists": "La cuenta ya existe",
+    "inactive": "La cuenta está inactiva",
+    "frozen": "La cuenta está congelada",
+    "closed": "La cuenta está cerrada",
+    "invalidType": "Tipo de cuenta inválido",
+    "limitReached": "Límite de cuenta alcanzado"
+  },
+  "bill": {
+    "notFound": "Factura no encontrada",
+    "alreadyPaid": "La factura ya ha sido pagada",
+    "pastDue": "La factura está vencida",
+    "invalidPayee": "Beneficiario inválido",
+    "invalidAmount": "Monto de pago inválido",
+    "scheduleFailed": "Error al programar el pago"
+  },
+  "server": {
+    "internal": "Error interno del servidor",
+    "maintenance": "El sistema está en mantenimiento",
+    "timeout": "Tiempo de espera agotado",
+    "unavailable": "Servicio temporalmente no disponible",
+    "database": "Error de base de datos",
+    "connection": "Error de conexión"
+  },
+  "request": {
+    "invalid": "Solicitud inválida",
+    "malformed": "Solicitud mal formada",
+    "tooLarge": "Solicitud demasiado grande",
+    "rateLimited": "Demasiadas solicitudes",
+    "methodNotAllowed": "Método no permitido"
+  },
+  "file": {
+    "notFound": "Archivo no encontrado",
+    "tooLarge": "El archivo es demasiado grande",
+    "invalidType": "Tipo de archivo inválido",
+    "uploadFailed": "Error al subir el archivo",
+    "downloadFailed": "Error al descargar el archivo"
+  },
+  "notification": {
+    "sendFailed": "Error al enviar la notificación",
+    "invalidToken": "Token de notificación inválido",
+    "notEnabled": "Las notificaciones no están habilitadas"
+  },
+  "user": {
+    "notFound": "Usuario no encontrado",
+    "alreadyExists": "El usuario ya existe",
+    "invalidRole": "Rol de usuario inválido",
+    "updateFailed": "Error al actualizar el usuario",
+    "deleteFailed": "Error al eliminar el usuario"
+  },
+  "common": {
+    "required": "Este campo es requerido",
+    "invalid": "Valor inválido",
+    "notFound": "No encontrado",
+    "alreadyExists": "Ya existe",
+    "createFailed": "Error al crear",
+    "updateFailed": "Error al actualizar",
+    "deleteFailed": "Error al eliminar",
+    "loadFailed": "Error al cargar",
+    "saveFailed": "Error al guardar",
+    "processFailed": "Error al procesar"
+  }
+}
