@@ -1,0 +1,89 @@
+{{#> layout}}
+    <h2>Your Account Statement is Ready</h2>
+    
+    <p>Dear {{name}},</p>
+    
+    <div class="alert alert-info">
+        <p>Your account statement for the period {{formatDate startDate}} to {{formatDate endDate}} is now available.</p>
+    </div>
+
+    <div class="alert alert-info">
+        <table class="table">
+            <tr>
+                <th>Account Number:</th>
+                <td>{{accountNumber}}</td>
+            </tr>
+            <tr>
+                <th>Statement Period:</th>
+                <td>{{formatDate startDate}} - {{formatDate endDate}}</td>
+            </tr>
+            <tr>
+                <th>Statement Type:</th>
+                <td>Monthly Statement</td>
+            </tr>
+        </table>
+    </div>
+
+    <p>You can access your statement in the following ways:</p>
+    
+    <div style="text-align: center; margin: 20px 0;">
+        <a href="{{downloadUrl}}" class="button">Download Statement</a>
+        <a href="{{viewOnlineUrl}}" class="button" style="margin-left: 10px;">View Online</a>
+    </div>
+
+    <div class="alert alert-info">
+        <p><strong>Statement Highlights:</strong></p>
+        <ul>
+            <li>Opening Balance: {{formatCurrency openingBalance}}</li>
+            <li>Closing Balance: {{formatCurrency closingBalance}}</li>
+            <li>Total Credits: {{formatCurrency totalCredits}}</li>
+            <li>Total Debits: {{formatCurrency totalDebits}}</li>
+        </ul>
+    </div>
+
+    <p><strong>Important Information:</strong></p>
+    <ul>
+        <li>Your statement is available for download for the next 30 days</li>
+        <li>Previous statements can be accessed through your online banking portal</li>
+        <li>You can change your statement preferences in your account settings</li>
+    </ul>
+
+    <div class="alert alert-warning">
+        <p><strong>Please Review:</strong> We recommend reviewing your statement carefully and reporting any discrepancies within 30 days.</p>
+    </div>
+
+    <p><strong>Go Paperless!</strong></p>
+    <div class="alert alert-info">
+        <p>Help us protect the environment by switching to e-statements. Benefits include:</p>
+        <ul>
+            <li>Instant access to your statements</li>
+            <li>Secure storage for up to 7 years</li>
+            <li>Reduce paper waste</li>
+            <li>Enhanced security</li>
+        </ul>
+    </div>
+
+    {{#unless isPaperless}}
+    <p>Want to switch to paperless statements?</p>
+    <a href="{{paperlessSettingsUrl}}" class="button">Go Paperless Now</a>
+    {{/unless}}
+
+    <p>Need assistance?</p>
+    <ul>
+        <li>Visit our Help Center for statement guides</li>
+        <li>Contact our support team for assistance</li>
+        <li>Use our mobile app for quick access to statements</li>
+    </ul>
+
+    <div class="alert alert-info">
+        <p><strong>Security Tip:</strong> Always ensure you're using a secure connection when accessing your statements online.</p>
+    </div>
+
+    <p>Best regards,<br>The Mobile Banking Team</p>
+
+    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee;">
+        <p style="font-size: 12px; color: #666666;">
+            This is an automated message. For security reasons, downloaded statements are password protected. Use your online banking password to open the PDF.
+        </p>
+    </div>
+{{/layout}}
