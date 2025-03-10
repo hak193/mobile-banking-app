@@ -1,0 +1,118 @@
+{
+  "auth": {
+    "invalidCredentials": "Invalid email or password",
+    "accountLocked": "Account has been locked. Please contact support",
+    "accountDisabled": "Account has been disabled",
+    "sessionExpired": "Session has expired. Please login again",
+    "unauthorized": "Unauthorized access",
+    "invalidToken": "Invalid or expired token",
+    "invalidCode": "Invalid verification code",
+    "codeExpired": "Verification code has expired",
+    "emailNotVerified": "Email address not verified",
+    "twoFactorRequired": "Two-factor authentication required",
+    "passwordMismatch": "Passwords do not match",
+    "oldPasswordIncorrect": "Current password is incorrect",
+    "passwordReused": "New password cannot be the same as previous passwords",
+    "tooManyAttempts": "Too many failed attempts. Please try again later"
+  },
+  "validation": {
+    "required": "{{field}} is required",
+    "invalid": "Invalid {{field}}",
+    "minLength": "{{field}} must be at least {{min}} characters",
+    "maxLength": "{{field}} cannot exceed {{max}} characters",
+    "email": "Invalid email address",
+    "phone": "Invalid phone number",
+    "password": {
+      "weak": "Password is too weak",
+      "requirements": "Password must contain uppercase, lowercase, number, and special character"
+    },
+    "amount": {
+      "invalid": "Invalid amount",
+      "minimum": "Amount must be at least {{min}}",
+      "maximum": "Amount cannot exceed {{max}}",
+      "insufficient": "Insufficient funds"
+    },
+    "date": {
+      "invalid": "Invalid date",
+      "future": "Date must be in the future",
+      "past": "Date must be in the past"
+    }
+  },
+  "transaction": {
+    "failed": "Transaction failed",
+    "cancelled": "Transaction cancelled",
+    "pending": "Transaction is still pending",
+    "duplicate": "Duplicate transaction detected",
+    "limitExceeded": "Transaction limit exceeded",
+    "accountFrozen": "Account is frozen",
+    "invalidAccount": "Invalid account",
+    "invalidRecipient": "Invalid recipient",
+    "invalidAmount": "Invalid amount",
+    "insufficientFunds": "Insufficient funds",
+    "transferFailed": "Transfer failed",
+    "paymentFailed": "Payment failed"
+  },
+  "account": {
+    "notFound": "Account not found",
+    "alreadyExists": "Account already exists",
+    "inactive": "Account is inactive",
+    "frozen": "Account is frozen",
+    "closed": "Account is closed",
+    "invalidType": "Invalid account type",
+    "limitReached": "Account limit reached"
+  },
+  "bill": {
+    "notFound": "Bill not found",
+    "alreadyPaid": "Bill has already been paid",
+    "pastDue": "Bill is past due",
+    "invalidPayee": "Invalid payee",
+    "invalidAmount": "Invalid payment amount",
+    "scheduleFailed": "Failed to schedule payment"
+  },
+  "server": {
+    "internal": "Internal server error",
+    "maintenance": "System is under maintenance",
+    "timeout": "Request timed out",
+    "unavailable": "Service temporarily unavailable",
+    "database": "Database error",
+    "connection": "Connection error"
+  },
+  "request": {
+    "invalid": "Invalid request",
+    "malformed": "Malformed request",
+    "tooLarge": "Request too large",
+    "rateLimited": "Too many requests",
+    "methodNotAllowed": "Method not allowed"
+  },
+  "file": {
+    "notFound": "File not found",
+    "tooLarge": "File is too large",
+    "invalidType": "Invalid file type",
+    "uploadFailed": "File upload failed",
+    "downloadFailed": "File download failed"
+  },
+  "notification": {
+    "sendFailed": "Failed to send notification",
+    "invalidToken": "Invalid notification token",
+    "notEnabled": "Notifications are not enabled"
+  },
+  "user": {
+    "notFound": "User not found",
+    "alreadyExists": "User already exists",
+    "invalidRole": "Invalid user role",
+    "updateFailed": "Failed to update user",
+    "deleteFailed": "Failed to delete user"
+  },
+  "common": {
+    "required": "This field is required",
+    "invalid": "Invalid value",
+    "notFound": "Not found",
+    "alreadyExists": "Already exists",
+    "createFailed": "Failed to create",
+    "updateFailed": "Failed to update",
+    "deleteFailed": "Failed to delete",
+    "loadFailed": "Failed to load",
+    "saveFailed": "Failed to save",
+    "processFailed": "Failed to process"
+  }
+}
