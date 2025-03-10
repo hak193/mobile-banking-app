@@ -1,0 +1,146 @@
+{
+  "fields": {
+    "email": {
+      "required": "La dirección de correo electrónico es requerida",
+      "invalid": "Por favor ingrese una dirección de correo electrónico válida",
+      "exists": "Esta dirección de correo electrónico ya está registrada",
+      "notFound": "Dirección de correo electrónico no encontrada"
+    },
+    "password": {
+      "required": "La contraseña es requerida",
+      "tooShort": "La contraseña debe tener al menos {{min}} caracteres",
+      "tooLong": "La contraseña no puede exceder {{max}} caracteres",
+      "weak": "La contraseña es demasiado débil",
+      "requirements": {
+        "title": "La contraseña debe contener:",
+        "uppercase": "Al menos una letra mayúscula",
+        "lowercase": "Al menos una letra minúscula",
+        "number": "Al menos un número",
+        "special": "Al menos un carácter especial",
+        "length": "Al menos {{min}} caracteres"
+      },
+      "mismatch": "Las contraseñas no coinciden",
+      "current": "La contraseña actual es incorrecta",
+      "reused": "La nueva contraseña no puede ser igual a su contraseña actual",
+      "recent": "La contraseña ha sido usada recientemente. Por favor elija una diferente"
+    },
+    "name": {
+      "required": "El nombre es requerido",
+      "firstName": "El nombre es requerido",
+      "lastName": "El apellido es requerido",
+      "tooShort": "El nombre debe tener al menos {{min}} caracteres",
+      "tooLong": "El nombre no puede exceder {{max}} caracteres",
+      "invalid": "El nombre contiene caracteres inválidos"
+    },
+    "phone": {
+      "required": "El número de teléfono es requerido",
+      "invalid": "Por favor ingrese un número de teléfono válido",
+      "exists": "Este número de teléfono ya está registrado"
+    },
+    "date": {
+      "required": "La fecha es requerida",
+      "invalid": "Por favor ingrese una fecha válida",
+      "future": "La fecha debe ser en el futuro",
+      "past": "La fecha debe ser en el pasado",
+      "range": "La fecha debe estar entre {{min}} y {{max}}"
+    },
+    "amount": {
+      "required": "El monto es requerido",
+      "invalid": "Por favor ingrese un monto válido",
+      "min": "El monto debe ser al menos {{min}}",
+      "max": "El monto no puede exceder {{max}}",
+      "insufficient": "Fondos insuficientes disponibles",
+      "decimal": "El monto no puede tener más de {{decimal}} decimales"
+    },
+    "account": {
+      "required": "La cuenta es requerida",
+      "invalid": "Cuenta inválida",
+      "same": "Las cuentas de origen y destino no pueden ser la misma",
+      "inactive": "La cuenta está inactiva",
+      "frozen": "La cuenta está congelada",
+      "closed": "La cuenta está cerrada",
+      "notFound": "Cuenta no encontrada"
+    },
+    "description": {
+      "required": "La descripción es requerida",
+      "tooLong": "La descripción no puede exceder {{max}} caracteres"
+    },
+    "address": {
+      "required": "La dirección es requerida",
+      "street": "La calle es requerida",
+      "city": "La ciudad es requerida",
+      "state": "El estado es requerido",
+      "zip": "El código postal es requerido",
+      "country": "El país es requerido",
+      "invalid": {
+        "street": "Dirección de calle inválida",
+        "city": "Ciudad inválida",
+        "state": "Estado inválido",
+        "zip": "Código postal inválido",
+        "country": "País inválido"
+      }
+    },
+    "file": {
+      "required": "El archivo es requerido",
+      "tooLarge": "El tamaño del archivo no puede exceder {{max}}",
+      "type": "Tipo de archivo no soportado. Tipos permitidos: {{types}}",
+      "damaged": "El archivo parece estar dañado o corrupto"
+    }
+  },
+  "form": {
+    "required": "Por favor complete todos los campos requeridos",
+    "invalid": "Por favor corrija los errores e intente nuevamente",
+    "success": "Formulario enviado exitosamente",
+    "error": "Error al enviar el formulario. Por favor intente nuevamente"
+  },
+  "transfer": {
+    "amount": {
+      "min": "El monto mínimo de transferencia es {{min}}",
+      "max": "El monto máximo de transferencia es {{max}}",
+      "daily": "Límite diario de transferencia excedido",
+      "monthly": "Límite mensual de transferencia excedido"
+    },
+    "recipient": {
+      "required": "El destinatario es requerido",
+      "invalid": "Cuenta de destinatario inválida",
+      "self": "No se puede transferir a la misma cuenta"
+    },
+    "schedule": {
+      "date": "La fecha de programación es requerida",
+      "frequency": "Por favor seleccione la frecuencia de transferencia",
+      "endDate": "La fecha de finalización debe ser posterior a la fecha de inicio"
+    }
+  },
+  "payment": {
+    "biller": {
+      "required": "El beneficiario es requerido",
+      "invalid": "Beneficiario seleccionado inválido"
+    },
+    "amount": {
+      "min": "El monto mínimo de pago es {{min}}",
+      "max": "El monto máximo de pago es {{max}}",
+      "invalid": "El monto de pago no coincide con el monto de la factura"
+    },
+    "date": {
+      "required": "La fecha de pago es requerida",
+      "past": "La fecha de pago no puede ser en el pasado",
+      "tooFar": "La fecha de pago no puede ser más de {{days}} días en el futuro"
+    }
+  },
+  "security": {
+    "code": {
+      "required": "El código de seguridad es requerido",
+      "invalid": "Código de seguridad inválido",
+      "expired": "El código de seguridad ha expirado"
+    },
+    "token": {
+      "required": "El token de autenticación es requerido",
+      "invalid": "Token de autenticación inválido",
+      "expired": "El token de autenticación ha expirado"
+    },
+    "device": {
+      "untrusted": "Dispositivo no reconocido",
+      "blocked": "El dispositivo ha sido bloqueado por razones de seguridad"
+    }
+  }
+}
