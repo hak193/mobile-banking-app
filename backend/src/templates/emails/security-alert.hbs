@@ -1,0 +1,83 @@
+{{#> layout}}
+    <h2>Security Alert</h2>
+    
+    <p>Dear {{name}},</p>
+    
+    <div class="alert alert-warning">
+        <p><strong>Important Security Notice:</strong> We detected a {{alertType}} on your account.</p>
+    </div>
+
+    <div class="alert alert-info">
+        <table class="table">
+            <tr>
+                <th>Event Type:</th>
+                <td>{{alertType}}</td>
+            </tr>
+            <tr>
+                <th>Date & Time:</th>
+                <td>{{formatDate date}}</td>
+            </tr>
+            <tr>
+                <th>Location:</th>
+                <td>{{location}}</td>
+            </tr>
+            <tr>
+                <th>Device:</th>
+                <td>{{device}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="alert alert-info">
+        <p><strong>Details:</strong><br>{{details}}</p>
+    </div>
+
+    {{#if requiresAction}}
+    <div class="alert alert-warning">
+        <p><strong>Action Required:</strong> Please take immediate action to secure your account.</p>
+    </div>
+
+    <p>For your security, please:</p>
+    <ul>
+        <li>Log in to your account and review recent activity</li>
+        <li>Change your password immediately</li>
+        <li>Enable two-factor authentication if not already enabled</li>
+        <li>Review and update your security settings</li>
+    </ul>
+
+    <a href="{{securitySettingsUrl}}" class="button">Review Security Settings</a>
+    {{/if}}
+
+    <p><strong>Recommended Security Measures:</strong></p>
+    <ul>
+        <li>Use a strong, unique password</li>
+        <li>Enable biometric authentication in the mobile app</li>
+        <li>Keep your contact information up to date</li>
+        <li>Monitor your account regularly</li>
+    </ul>
+
+    <div class="alert alert-warning">
+        <p><strong>If you don't recognize this activity:</strong></p>
+        <ol>
+            <li>Contact our security team immediately at {{securityContactNumber}}</li>
+            <li>Change your password immediately</li>
+            <li>Review all recent transactions</li>
+            <li>Check for any unauthorized changes to your account settings</li>
+        </ol>
+    </div>
+
+    <p>To report suspicious activity or speak with our security team:</p>
+    <ul>
+        <li>Call: {{securityContactNumber}} (24/7 Security Hotline)</li>
+        <li>Email: {{securityEmail}}</li>
+        <li>Visit: Your nearest branch</li>
+    </ul>
+
+    <p><strong>Your security is our top priority.</strong> We continuously monitor your account for suspicious activity and will alert you to any concerns.</p>
+
+    <div class="alert alert-info">
+        <p><strong>Security Tip:</strong> We will never ask for your password, PIN, or full account details via email or phone.</p>
+    </div>
+
+    <p>Best regards,<br>The Mobile Banking Security Team</p>
+{{/layout}}
