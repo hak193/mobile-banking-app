@@ -1,0 +1,158 @@
+{
+  "app": {
+    "name": "Banca Móvil",
+    "tagline": "Banca al alcance de tu mano",
+    "welcome": "Bienvenido a Banca Móvil"
+  },
+  "auth": {
+    "login": "Iniciar Sesión",
+    "register": "Registrarse",
+    "logout": "Cerrar Sesión",
+    "forgotPassword": "¿Olvidó su Contraseña?",
+    "resetPassword": "Restablecer Contraseña",
+    "changePassword": "Cambiar Contraseña",
+    "twoFactorAuth": "Autenticación de Dos Factores",
+    "verifyEmail": "Verificar Correo",
+    "resendCode": "Reenviar Código"
+  },
+  "account": {
+    "overview": "Resumen de Cuenta",
+    "balance": "Saldo",
+    "available": "Saldo Disponible",
+    "pending": "Pendiente",
+    "accountNumber": "Número de Cuenta",
+    "routingNumber": "Número de Ruta",
+    "type": {
+      "savings": "Cuenta de Ahorro",
+      "checking": "Cuenta Corriente"
+    },
+    "status": {
+      "active": "Activa",
+      "inactive": "Inactiva",
+      "frozen": "Congelada",
+      "closed": "Cerrada"
+    }
+  },
+  "transaction": {
+    "history": "Historial de Transacciones",
+    "details": "Detalles de la Transacción",
+    "type": {
+      "deposit": "Depósito",
+      "withdrawal": "Retiro",
+      "transfer": "Transferencia",
+      "payment": "Pago",
+      "refund": "Reembolso",
+      "fee": "Cargo"
+    },
+    "status": {
+      "pending": "Pendiente",
+      "completed": "Completada",
+      "failed": "Fallida",
+      "cancelled": "Cancelada"
+    },
+    "amount": "Monto",
+    "date": "Fecha",
+    "description": "Descripción",
+    "reference": "Número de Referencia"
+  },
+  "transfer": {
+    "title": "Transferir Dinero",
+    "from": "Cuenta de Origen",
+    "to": "Cuenta de Destino",
+    "amount": "Monto",
+    "description": "Descripción",
+    "schedule": "Programar Transferencia",
+    "recurring": "Hacer Recurrente",
+    "frequency": {
+      "once": "Una Vez",
+      "daily": "Diariamente",
+      "weekly": "Semanalmente",
+      "monthly": "Mensualmente"
+    }
+  },
+  "bill": {
+    "payment": "Pago de Facturas",
+    "payee": "Beneficiario",
+    "amount": "Monto",
+    "dueDate": "Fecha de Vencimiento",
+    "schedule": "Programar Pago",
+    "recurring": "Configurar Pago Recurrente",
+    "history": "Historial de Pagos",
+    "status": {
+      "scheduled": "Programado",
+      "processing": "Procesando",
+      "paid": "Pagado",
+      "failed": "Fallido"
+    }
+  },
+  "profile": {
+    "title": "Perfil",
+    "personalInfo": "Información Personal",
+    "contactInfo": "Información de Contacto",
+    "preferences": "Preferencias",
+    "security": "Configuración de Seguridad",
+    "notifications": "Configuración de Notificaciones"
+  },
+  "notification": {
+    "title": "Notificaciones",
+    "markRead": "Marcar como Leída",
+    "markAllRead": "Marcar Todas como Leídas",
+    "type": {
+      "transaction": "Alerta de Transacción",
+      "security": "Alerta de Seguridad",
+      "account": "Alerta de Cuenta",
+      "system": "Mensaje del Sistema"
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "view": "Ver",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "submit": "Enviar",
+    "continue": "Continuar",
+    "tryAgain": "Intentar de Nuevo",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "refresh": "Actualizar",
+    "more": "Más",
+    "less": "Menos",
+    "all": "Todo",
+    "none": "Ninguno",
+    "or": "o",
+    "and": "y",
+    "yes": "Sí",
+    "no": "No"
+  },
+  "date": {
+    "today": "Hoy",
+    "yesterday": "Ayer",
+    "tomorrow": "Mañana",
+    "thisWeek": "Esta Semana",
+    "lastWeek": "Semana Pasada",
+    "thisMonth": "Este Mes",
+    "lastMonth": "Mes Pasado",
+    "thisYear": "Este Año",
+    "lastYear": "Año Pasado",
+    "custom": "Rango Personalizado"
+  },
+  "currency": {
+    "USD": "Dólar Estadounidense",
+    "EUR": "Euro",
+    "GBP": "Libra Esterlina",
+    "JPY": "Yen Japonés",
+    "CAD": "Dólar Canadiense",
+    "AUD": "Dólar Australiano",
+    "CHF": "Franco Suizo",
+    "CNY": "Yuan Chino"
+  }
+}
