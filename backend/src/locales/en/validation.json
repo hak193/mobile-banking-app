@@ -1,0 +1,146 @@
+{
+  "fields": {
+    "email": {
+      "required": "Email address is required",
+      "invalid": "Please enter a valid email address",
+      "exists": "This email address is already registered",
+      "notFound": "Email address not found"
+    },
+    "password": {
+      "required": "Password is required",
+      "tooShort": "Password must be at least {{min}} characters long",
+      "tooLong": "Password cannot exceed {{max}} characters",
+      "weak": "Password is too weak",
+      "requirements": {
+        "title": "Password must contain:",
+        "uppercase": "At least one uppercase letter",
+        "lowercase": "At least one lowercase letter",
+        "number": "At least one number",
+        "special": "At least one special character",
+        "length": "At least {{min}} characters"
+      },
+      "mismatch": "Passwords do not match",
+      "current": "Current password is incorrect",
+      "reused": "New password cannot be the same as your current password",
+      "recent": "Password has been used recently. Please choose a different one"
+    },
+    "name": {
+      "required": "Name is required",
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "tooShort": "Name must be at least {{min}} characters long",
+      "tooLong": "Name cannot exceed {{max}} characters",
+      "invalid": "Name contains invalid characters"
+    },
+    "phone": {
+      "required": "Phone number is required",
+      "invalid": "Please enter a valid phone number",
+      "exists": "This phone number is already registered"
+    },
+    "date": {
+      "required": "Date is required",
+      "invalid": "Please enter a valid date",
+      "future": "Date must be in the future",
+      "past": "Date must be in the past",
+      "range": "Date must be between {{min}} and {{max}}"
+    },
+    "amount": {
+      "required": "Amount is required",
+      "invalid": "Please enter a valid amount",
+      "min": "Amount must be at least {{min}}",
+      "max": "Amount cannot exceed {{max}}",
+      "insufficient": "Insufficient funds available",
+      "decimal": "Amount cannot have more than {{decimal}} decimal places"
+    },
+    "account": {
+      "required": "Account is required",
+      "invalid": "Invalid account",
+      "same": "Source and destination accounts cannot be the same",
+      "inactive": "Account is inactive",
+      "frozen": "Account is frozen",
+      "closed": "Account is closed",
+      "notFound": "Account not found"
+    },
+    "description": {
+      "required": "Description is required",
+      "tooLong": "Description cannot exceed {{max}} characters"
+    },
+    "address": {
+      "required": "Address is required",
+      "street": "Street address is required",
+      "city": "City is required",
+      "state": "State is required",
+      "zip": "ZIP code is required",
+      "country": "Country is required",
+      "invalid": {
+        "street": "Invalid street address",
+        "city": "Invalid city",
+        "state": "Invalid state",
+        "zip": "Invalid ZIP code",
+        "country": "Invalid country"
+      }
+    },
+    "file": {
+      "required": "File is required",
+      "tooLarge": "File size cannot exceed {{max}}",
+      "type": "File type not supported. Allowed types: {{types}}",
+      "damaged": "File appears to be damaged or corrupt"
+    }
+  },
+  "form": {
+    "required": "Please fill in all required fields",
+    "invalid": "Please correct the errors and try again",
+    "success": "Form submitted successfully",
+    "error": "Error submitting form. Please try again"
+  },
+  "transfer": {
+    "amount": {
+      "min": "Minimum transfer amount is {{min}}",
+      "max": "Maximum transfer amount is {{max}}",
+      "daily": "Daily transfer limit exceeded",
+      "monthly": "Monthly transfer limit exceeded"
+    },
+    "recipient": {
+      "required": "Recipient is required",
+      "invalid": "Invalid recipient account",
+      "self": "Cannot transfer to same account"
+    },
+    "schedule": {
+      "date": "Schedule date is required",
+      "frequency": "Please select transfer frequency",
+      "endDate": "End date must be after start date"
+    }
+  },
+  "payment": {
+    "biller": {
+      "required": "Biller is required",
+      "invalid": "Invalid biller selected"
+    },
+    "amount": {
+      "min": "Minimum payment amount is {{min}}",
+      "max": "Maximum payment amount is {{max}}",
+      "invalid": "Payment amount does not match bill amount"
+    },
+    "date": {
+      "required": "Payment date is required",
+      "past": "Payment date cannot be in the past",
+      "tooFar": "Payment date cannot be more than {{days}} days in advance"
+    }
+  },
+  "security": {
+    "code": {
+      "required": "Security code is required",
+      "invalid": "Invalid security code",
+      "expired": "Security code has expired"
+    },
+    "token": {
+      "required": "Authentication token is required",
+      "invalid": "Invalid authentication token",
+      "expired": "Authentication token has expired"
+    },
+    "device": {
+      "untrusted": "Unrecognized device",
+      "blocked": "Device has been blocked for security reasons"
+    }
+  }
+}
