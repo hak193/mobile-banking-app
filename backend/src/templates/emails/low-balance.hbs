@@ -1,0 +1,111 @@
+{{#> layout}}
+    <h2>Low Balance Alert</h2>
+    
+    <p>Dear {{name}},</p>
+    
+    <div class="alert alert-warning">
+        <p><strong>Important Notice:</strong> Your account balance has fallen below your set threshold of {{formatCurrency threshold}}.</p>
+    </div>
+
+    <div class="alert alert-info">
+        <table class="table">
+            <tr>
+                <th>Account Number:</th>
+                <td>{{accountNumber}}</td>
+            </tr>
+            <tr>
+                <th>Current Balance:</th>
+                <td>{{formatCurrency balance}}</td>
+            </tr>
+            <tr>
+                <th>Alert Threshold:</th>
+                <td>{{formatCurrency threshold}}</td>
+            </tr>
+            <tr>
+                <th>Alert Time:</th>
+                <td>{{formatDate timestamp}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <p><strong>Actions you can take:</strong></p>
+    <ul>
+        <li>Transfer funds from another account</li>
+        <li>Deposit additional funds</li>
+        <li>Review upcoming automatic payments</li>
+        <li>Adjust your low balance threshold</li>
+    </ul>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <a href="{{transferFundsUrl}}" class="button">Transfer Funds</a>
+        <a href="{{viewAccountUrl}}" class="button" style="margin-left: 10px;">View Account</a>
+    </div>
+
+    {{#if upcomingPayments}}
+    <div class="alert alert-warning">
+        <p><strong>Upcoming Scheduled Payments:</strong></p>
+        <table class="table">
+            {{#each upcomingPayments}}
+            <tr>
+                <td>{{formatDate date}}</td>
+                <td>{{description}}</td>
+                <td>{{formatCurrency amount}}</td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+    {{/if}}
+
+    <div class="alert alert-info">
+        <p><strong>Tips to manage your balance:</strong></p>
+        <ul>
+            <li>Set up automatic transfers to maintain minimum balance</li>
+            <li>Review and adjust recurring payments</li>
+            <li>Enable overdraft protection</li>
+            <li>Monitor your spending patterns</li>
+        </ul>
+    </div>
+
+    <p><strong>Need assistance?</strong></p>
+    <ul>
+        <li>Visit our financial planning tools</li>
+        <li>Speak with a financial advisor</li>
+        <li>Review our overdraft protection options</li>
+    </ul>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <a href="{{alertSettingsUrl}}" class="button">Adjust Alert Settings</a>
+    </div>
+
+    <div class="alert alert-info">
+        <p><strong>Did you know?</strong> You can:</p>
+        <ul>
+            <li>Set different alert thresholds for each account</li>
+            <li>Choose how you receive alerts (email, SMS, or push notifications)</li>
+            <li>Set up daily or weekly balance notifications</li>
+        </ul>
+    </div>
+
+    {{#if savingsGoals}}
+    <div class="alert alert-info">
+        <p><strong>Your Savings Goals:</strong></p>
+        <table class="table">
+            {{#each savingsGoals}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{formatCurrency targetAmount}}</td>
+                <td>{{progress}}% Complete</td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+    {{/if}}
+
+    <p>Best regards,<br>The Mobile Banking Team</p>
+
+    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee;">
+        <p style="font-size: 12px; color: #666666;">
+            You received this alert because you enabled low balance notifications. You can adjust your alert preferences at any time through your account settings.
+        </p>
+    </div>
+{{/layout}}
