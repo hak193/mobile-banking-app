@@ -1,0 +1,76 @@
+{{#> layout}}
+    <h2>Your Authentication Code</h2>
+    
+    <p>Dear {{name}},</p>
+    
+    <div class="alert alert-info">
+        <p>You requested a verification code to authenticate your login attempt.</p>
+    </div>
+
+    <div style="text-align: center; padding: 20px; margin: 20px 0; background-color: #f8f9fa; border-radius: 4px;">
+        <h1 style="font-size: 32px; letter-spacing: 5px; color: #007bff;">{{code}}</h1>
+        <p style="color: #666666;">This code will expire in {{expiryTime}}</p>
+    </div>
+
+    <div class="alert alert-warning">
+        <p><strong>Important:</strong> If you didn't request this code, someone may be trying to access your account.</p>
+    </div>
+
+    <p><strong>Security Reminders:</strong></p>
+    <ul>
+        <li>Never share this code with anyone</li>
+        <li>Our staff will never ask for your verification code</li>
+        <li>Enter the code only on our official website or mobile app</li>
+        <li>Each code can only be used once</li>
+    </ul>
+
+    <div class="alert alert-info">
+        <p><strong>Device Information:</strong></p>
+        <table class="table">
+            <tr>
+                <th>Time:</th>
+                <td>{{formatDate timestamp}}</td>
+            </tr>
+            <tr>
+                <th>Location:</th>
+                <td>{{location}}</td>
+            </tr>
+            <tr>
+                <th>Device:</th>
+                <td>{{device}}</td>
+            </tr>
+            <tr>
+                <th>Browser:</th>
+                <td>{{browser}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="alert alert-warning">
+        <p><strong>If you didn't request this code:</strong></p>
+        <ol>
+            <li>Do not share or enter this code anywhere</li>
+            <li>Change your password immediately</li>
+            <li>Contact our security team at {{securityContactNumber}}</li>
+        </ol>
+    </div>
+
+    <p>Having trouble?</p>
+    <ul>
+        <li>Request a new code if this one expires</li>
+        <li>Contact our support team for assistance</li>
+        <li>Visit our Help Center for troubleshooting guides</li>
+    </ul>
+
+    <div class="alert alert-info">
+        <p><strong>Tip:</strong> For faster authentication in the future, consider enabling biometric login in our mobile app.</p>
+    </div>
+
+    <p>Best regards,<br>The Mobile Banking Security Team</p>
+
+    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee;">
+        <p style="font-size: 12px; color: #666666;">
+            This is an automated message. Please do not reply to this email. The verification code is valid for {{expiryTime}} from the time of request.
+        </p>
+    </div>
+{{/layout}}
