@@ -1,0 +1,71 @@
+{{#> layout}}
+    <h2>Bill Payment Confirmation</h2>
+    
+    <p>Dear {{name}},</p>
+    
+    <p>Your bill payment has been {{status}}.</p>
+
+    <div class="alert alert-info">
+        <table class="table">
+            <tr>
+                <th>Biller:</th>
+                <td>{{billerName}}</td>
+            </tr>
+            <tr>
+                <th>Amount:</th>
+                <td>{{formatCurrency amount}}</td>
+            </tr>
+            <tr>
+                <th>Date:</th>
+                <td>{{formatDate date}}</td>
+            </tr>
+            <tr>
+                <th>Reference:</th>
+                <td>{{reference}}</td>
+            </tr>
+            <tr>
+                <th>Status:</th>
+                <td>{{status}}</td>
+            </tr>
+        </table>
+    </div>
+
+    {{#if isScheduled}}
+    <div class="alert alert-info">
+        <p><strong>Scheduled Payment:</strong> This payment has been scheduled for {{formatDate scheduledDate}}.</p>
+    </div>
+    {{else}}
+    <div class="alert alert-info">
+        <p><strong>Payment Processed:</strong> The amount has been debited from your account.</p>
+    </div>
+    {{/if}}
+
+    <p>To view payment details or download your receipt, please click below:</p>
+    
+    <a href="{{receiptUrl}}" class="button">View Payment Receipt</a>
+
+    {{#if isRecurring}}
+    <div class="alert alert-info">
+        <p><strong>Recurring Payment:</strong> This is a recurring payment. The next payment is scheduled for {{formatDate nextPaymentDate}}.</p>
+    </div>
+    {{/if}}
+
+    <div class="alert alert-warning">
+        <p><strong>Important:</strong> Please keep this confirmation for your records. If you notice any discrepancies, please contact us immediately.</p>
+    </div>
+
+    <p>Helpful Tips:</p>
+    <ul>
+        <li>Set up automatic payments to avoid late fees</li>
+        <li>Enable notifications for payment reminders</li>
+        <li>Keep your biller information up to date</li>
+        <li>Review your scheduled payments regularly</li>
+    </ul>
+
+    <p>Need to manage your bill payments?</p>
+    <a href="{{loginUrl}}" class="button">Manage Bill Payments</a>
+
+    <p>If you have any questions about this payment or need assistance, please don't hesitate to contact our support team.</p>
+
+    <p>Best regards,<br>The Mobile Banking Team</p>
+{{/layout}}
