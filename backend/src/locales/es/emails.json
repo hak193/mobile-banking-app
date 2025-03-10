@@ -1,0 +1,130 @@
+{
+  "common": {
+    "greeting": "Estimado/a {{name}}",
+    "signature": "Saludos cordiales,\nEl Equipo de Banca Móvil",
+    "footer": {
+      "contact": "Si tiene alguna pregunta, por favor contacte a nuestro equipo de soporte",
+      "phone": "Teléfono: {{supportPhone}}",
+      "email": "Correo: {{supportEmail}}",
+      "hours": "Disponible 24/7",
+      "disclaimer": "Este es un mensaje automático, por favor no responda a este correo",
+      "confidential": "Este correo contiene información confidencial"
+    }
+  },
+  "welcome": {
+    "subject": "Bienvenido a Banca Móvil",
+    "title": "¡Bienvenido a Banca Móvil!",
+    "message": "Gracias por elegir Banca Móvil. Su cuenta ha sido creada exitosamente.",
+    "getStarted": "Para Comenzar:",
+    "steps": {
+      "app": "Descargue nuestra aplicación móvil",
+      "security": "Configure sus preferencias de seguridad",
+      "billers": "Agregue sus beneficiarios favoritos",
+      "explore": "Explore nuestras funciones bancarias"
+    },
+    "security": {
+      "title": "Para su seguridad, recomendamos:",
+      "password": "Usar una contraseña fuerte y única",
+      "twoFactor": "Activar la autenticación de dos factores",
+      "credentials": "Nunca compartir sus credenciales de inicio de sesión",
+      "logout": "Siempre cerrar sesión al terminar"
+    },
+    "support": "Si tiene preguntas o necesita ayuda, nuestro equipo de soporte está disponible 24/7",
+    "warning": "Importante: Si usted no creó esta cuenta, por favor contáctenos inmediatamente"
+  },
+  "verification": {
+    "subject": "Verifique su Dirección de Correo Electrónico",
+    "title": "Verificación de Correo Electrónico",
+    "message": "Por favor verifique su dirección de correo electrónico haciendo clic en el botón a continuación:",
+    "button": "Verificar Correo",
+    "expiry": "Este enlace de verificación expirará en {{time}}",
+    "ignore": "Si no creó una cuenta, puede ignorar este correo"
+  },
+  "passwordReset": {
+    "subject": "Restablecer su Contraseña",
+    "title": "Solicitud de Restablecimiento de Contraseña",
+    "message": "Recibimos una solicitud para restablecer su contraseña. Haga clic en el botón a continuación para continuar:",
+    "button": "Restablecer Contraseña",
+    "expiry": "Este enlace de restablecimiento expirará en {{time}}",
+    "security": {
+      "title": "Por razones de seguridad:",
+      "oneTime": "El enlace solo puede usarse una vez",
+      "different": "Su nueva contraseña debe ser diferente a la anterior",
+      "strong": "Elija una contraseña fuerte que incluya mayúsculas, números y caracteres especiales",
+      "share": "Nunca comparta su contraseña con nadie"
+    },
+    "warning": "Si no solicitó este restablecimiento de contraseña, por favor contáctenos inmediatamente"
+  },
+  "transaction": {
+    "subject": "Notificación de Transacción",
+    "title": "Alerta de Transacción",
+    "message": "Una transacción {{type}} ha sido {{status}} en su cuenta",
+    "details": {
+      "type": "Tipo de Transacción",
+      "amount": "Monto",
+      "date": "Fecha",
+      "reference": "Referencia",
+      "status": "Estado"
+    },
+    "debit": "Este monto ha sido debitado de su cuenta",
+    "credit": "Este monto ha sido acreditado a su cuenta",
+    "viewDetails": "Para ver los detalles de la transacción o descargar su recibo, por favor inicie sesión en su cuenta",
+    "security": "Si no autorizó esta transacción, por favor contáctenos inmediatamente"
+  },
+  "billPayment": {
+    "subject": "Confirmación de Pago de Factura",
+    "title": "Pago de Factura {{status}}",
+    "details": {
+      "biller": "Beneficiario",
+      "amount": "Monto",
+      "date": "Fecha",
+      "reference": "Referencia",
+      "status": "Estado"
+    },
+    "scheduled": "Este pago ha sido programado para {{date}}",
+    "processed": "El monto ha sido debitado de su cuenta",
+    "recurring": "Este es un pago recurrente. El próximo pago está programado para {{date}}",
+    "receipt": "Para ver los detalles del pago o descargar su recibo, haga clic a continuación"
+  },
+  "securityAlert": {
+    "subject": "Alerta de Seguridad",
+    "title": "Aviso de Seguridad Importante",
+    "details": {
+      "event": "Tipo de Evento",
+      "date": "Fecha y Hora",
+      "location": "Ubicación",
+      "device": "Dispositivo"
+    },
+    "action": {
+      "title": "Acción Requerida",
+      "steps": {
+        "review": "Inicie sesión en su cuenta y revise la actividad reciente",
+        "password": "Cambie su contraseña inmediatamente",
+        "twoFactor": "Active la autenticación de dos factores si aún no está activada",
+        "settings": "Revise y actualice su configuración de seguridad"
+      }
+    },
+    "contact": "Si no reconoce esta actividad, por favor contacte a nuestro equipo de seguridad inmediatamente"
+  },
+  "statement": {
+    "subject": "Su Estado de Cuenta está Disponible",
+    "title": "Estado de Cuenta Mensual Disponible",
+    "message": "Su estado de cuenta para el período {{startDate}} a {{endDate}} está disponible",
+    "details": {
+      "account": "Número de Cuenta",
+      "period": "Período del Estado",
+      "type": "Tipo de Estado"
+    },
+    "download": "Descargar Estado",
+    "viewOnline": "Ver en Línea",
+    "paperless": {
+      "title": "¡Cambie a Digital!",
+      "benefits": {
+        "instant": "Acceso instantáneo a sus estados de cuenta",
+        "storage": "Almacenamiento seguro hasta por 7 años",
+        "environment": "Reducción del uso de papel",
+        "security": "Mayor seguridad"
+      }
+    }
+  }
+}
